@@ -62,7 +62,7 @@ else if [ $LEVEL == 1 ]; then
 	$slowtype "For example: \`pwd\` will become /directory/path/"
 	$slowtype "Make sense?"
     else if [ $RUNS == 1 ]; then
-	
+	echo test
     fi
     fi
     fi
