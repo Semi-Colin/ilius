@@ -12,8 +12,10 @@ sed -ie s/"runs [[:digit:]].*"/"runs $RUNS"/ .save
 #Updates save file with appropriate information
 
 function nextLevel () {
-    let "LEVEL++" && #Increments level count  
-    let "RUNS=0" && #Increments run count
+    let "LEVEL++" 
+    #Increments level count  
+    let "RUNS=0" 
+    #Increments run count
 
     sed -ie s/"level [[:digit:]].*"/"level $LEVEL"/ .save 
     sed -ie s/"runs [[:digit:]].*"/"runs $RUNS"/ .save
@@ -54,11 +56,14 @@ if [ "$LEVEL" == 0 ]; then
 	$slowtype "Try running me with a -i flag, and, as an input, put whatever command you humans use to display the working directory, and surround it with back ticks."
     fi
 fi
-else if [ "$LEVEL" == 1 ]; then
-    if [ "$RUNS" == 0 ]; then
+else if [ $LEVEL == 1 ]; then
+    if [ $RUNS == 1 ]; then
 	$slowtype "What you just did... surrounding anything with back ticks means that BASH will read what's inside those ticks, and run it as a script. It will then remove that back tick-surrounded text, and replace it with the output of said script."
-	$slowtype "For example: \`pwd\` will become /directory/path/."
+	$slowtype "For example: \`pwd\` will become /directory/path/"
 	$slowtype "Make sense?"
+    else if [ $RUNS == 1 ]; then
+	
+    fi
     fi
     fi
     fi
