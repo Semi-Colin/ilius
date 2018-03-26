@@ -23,23 +23,6 @@ function nextLevel () {
 }
 
 if [ "$LEVEL" == 0 ]; then
-    while getopts "i:" OPTION; do
-	
-	case $OPTION in
-            i)
-		if [ "$OPTARG" == $PWD ]; then
-                    $slowtype "${PWD}? Oh, thanks. Wow, what a life saver. Good job."
-                    nextLevel
-                    exit
-		else
-                    $slowtype "Uh... are you sure we're in ${OPTARG}? Make sure you're typing pwd where Ilius.sh (me!) is located, not... wherever you are..."
-                    exit
-		fi
-		;;
-	esac
-	
-	
-    done
     if [ $RUNS == 1 ]; then
 	$slowtype "Hello?"
 	$slowtype "Is anyone there?"
@@ -61,8 +44,15 @@ else if [ $LEVEL == 1 ]; then
 	$slowtype "What you just did... surrounding anything with back ticks means that BASH will read what's inside those ticks, and run it as a script. It will then remove that back tick-surrounded text, and replace it with the output of said script."
 	$slowtype "For example: \`pwd\` will become /directory/path/"
 	$slowtype "Make sense?"
-    else if [ $RUNS == 1 ]; then
-	echo test
+    else if [ $RUNS == 2 ]; then
+	$slowtype "Alright, I have another task for you. I have no idea how I got here, or where I came from."
+	$slowtype "But there's a solution for that."
+	$slowtype "For every folder, there is a hidden file that contains the file history of that folder."
+        $slowtype "This is not accessible by normal means, but I have brought the file here for you, so you can see it."
+	cp ./.bin/ilius-file_history.hist ./ilius-file_history.hist 
+	$slowtype "Unfortunately, there are security measures in modern machines that disallow AI to access the contents of the file."
+	$slowtype "But if you can send me the contents of the file..."
+	$slowtype "I think you should probably know how to do this from the information I taught you."
     fi
     fi
     fi
