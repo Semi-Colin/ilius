@@ -61,8 +61,12 @@ else if [ $LEVEL == 1 ]; then
 	$slowtype "What you just did... surrounding anything with back ticks means that BASH will read what's inside those ticks, and run it as a script. It will then remove that back tick-surrounded text, and replace it with the output of said script."
 	$slowtype "For example: \`pwd\` will become /directory/path/"
 	$slowtype "Make sense?"
-    else if [ $RUNS == 1 ]; then
-	echo test
+	$slowtype "Oh, and one more thing:"
+	$slowtyype "You know that -i flag? You should use that flag when you are feeding me an input."
+    else if [ $RUNS == 2 ]; then
+	$slowtype "Okay, I have another task for you."
+	
+	
     fi
     fi
     fi
