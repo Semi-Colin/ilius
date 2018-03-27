@@ -54,6 +54,8 @@ else if [ $LEVEL == 1 ]; then
 	$slowtype "Unfortunately, there are security measures in modern machines that disallow AI to access the contents of the file."
 	$slowtype "But if you can send me the contents of the file..."
 	$slowtype "I think you should probably know how to do this from the information I taught you."
+	$slowtype "Oh, and one more thing:"
+	$slowtyype "You know that -i flag? You should use that flag when you are feeding me an input."
     fi
     fi
     fi
