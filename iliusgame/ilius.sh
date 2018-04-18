@@ -30,12 +30,11 @@ while getopts "i:" OPTION; do
 		if [ "$OPTARG" == $PWD ]; then
                     $slowtype "${PWD}? Oh, thanks. Wow, what a life saver. Good job."
                     nextLevel
-                    exit
 		else
                     $slowtype "Uh... are you sure we're in ${OPTARG}? Make sure you're typing pwd where Ilius.sh (me!) is located, not... wherever you are..."
-                    exit
 		fi
 	    fi
+		fi
 	    ;;
     esac
     
@@ -74,7 +73,6 @@ else if [ $LEVEL == 1 ]; then
 	$slowtype "I think you should probably know how to do this from the information I taught you."
 	$slowtype "Oh, and one more thing:"
 	$slowtyype "You know that -i flag? You should use that flag when you are feeding me an input."
-    fi
     fi
     fi
     fi
