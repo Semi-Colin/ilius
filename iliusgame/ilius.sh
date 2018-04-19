@@ -26,7 +26,7 @@ while getopts "i:" OPTION; do
     
     case $OPTION in
         i)
-	    if [ "$LEVEL" == 0 ]
+	    if [ "$LEVEL" == 0 ]; then
 		if [ "$OPTARG" == $PWD ]; then
                     $slowtype "${PWD}? Oh, thanks. Wow, what a life saver. Good job."
                     nextLevel
@@ -34,7 +34,6 @@ while getopts "i:" OPTION; do
                     $slowtype "Uh... are you sure we're in ${OPTARG}? Make sure you're typing pwd where Ilius.sh (me!) is located, not... wherever you are..."
 		fi
 	    fi
-		fi
 	    ;;
     esac
     
@@ -72,7 +71,8 @@ else if [ $LEVEL == 1 ]; then
 	$slowtype "But if you can send me the contents of the file..."
 	$slowtype "I think you should probably know how to do this from the information I taught you."
 	$slowtype "Oh, and one more thing:"
-	$slowtyype "You know that -i flag? You should use that flag when you are feeding me an input."
+	$slowtype "You know that -i flag? You should use that flag when you are feeding me an input."
+    fi
     fi
     fi
     fi
