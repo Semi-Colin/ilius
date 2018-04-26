@@ -26,7 +26,7 @@ while getopts "i:" OPTION; do
     
     case $OPTION in
         i)
-	    if [ "$LEVEL" == 0 ]; then
+	    if [ "$LEVEL" == 0 ]
 		if [ "$OPTARG" == $PWD ]; then
                     $slowtype "${PWD}? Oh, thanks. Wow, what a life saver. Good job."
                     nextLevel
