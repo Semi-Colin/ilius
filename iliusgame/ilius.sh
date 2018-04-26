@@ -71,7 +71,7 @@ else if [ $LEVEL == 1 ]; then
 	$slowtype "But if you can send me the contents of the file..."
 	$slowtype "I think you should probably know how to do this from the information I taught you."
 	$slowtype "Oh, and one more thing:"
-	$slowtype "You know that -i flag? You should use that flag when you are feeding me an input."
+	$slowtyype "You know that -i flag? You should use that flag when you are feeding me an input."
     fi
     fi
     fi
