@@ -35,6 +35,13 @@ while getopts "i:" OPTION; do
                     $slowtype "Uh... are you sure we're in ${OPTARG}? Make sure you're typing pwd where Ilius.sh (me!) is located, not... wherever you are..."
                     exit
 		fi
+	    else if [ "$LEVEL" == 1 ]; then
+		if [ "$OPTARG" == "./ilius-file_history.hist" ]; then
+		    $slowtype "Yes! Fantastic jo"
+		    $slowtype "Oh, no..."
+		    $slowtype "The file is total junk data. Ugh... "
+		    $slowtype "Well, that's normal"
+		fi
 	    fi
 	    ;;
     esac
