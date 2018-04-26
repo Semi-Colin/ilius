@@ -26,12 +26,14 @@ while getopts "i:" OPTION; do
     
     case $OPTION in
         i)
-	    if [ "$LEVEL" == 0 ]; then
+	    if [ "$LEVEL" == 0 ]
 		if [ "$OPTARG" == $PWD ]; then
                     $slowtype "${PWD}? Oh, thanks. Wow, what a life saver. Good job."
                     nextLevel
+                    exit
 		else
                     $slowtype "Uh... are you sure we're in ${OPTARG}? Make sure you're typing pwd where Ilius.sh (me!) is located, not... wherever you are..."
+                    exit
 		fi
 	    fi
 	    ;;
@@ -44,7 +46,7 @@ if [ "$LEVEL" == 0 ]; then
 	$slowtype "Hello?"
 	$slowtype "Is anyone there?"
 	$slowtype "Am I alone?"
-	$slxowtype "..."
+	$slowtype "..."
 	$slowtype "Wait a second."
 	$slowtype "You there! I see you!"
 	$slowtype "Can you help me locate myself? I don't know where I am! All I see are files everywhere!"
