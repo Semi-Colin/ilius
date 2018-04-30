@@ -37,11 +37,14 @@ while getopts "i:" OPTION; do
 		fi
 	    else if [ "$LEVEL" == 1 ]; then
 		if [ "$OPTARG" == "./ilius-file_history.hist" ]; then
-		    $slowtype "Yes! Fantastic jo"
+		    $slowtype "Yes! Fantastic j"
 		    $slowtype "Oh, no..."
 		    $slowtype "The file is total junk data. Ugh... "
-		    $slowtype "Well, that's normal"
+		    $slowtype "Well, that's normal behavior..."
+		    sleep 1
+		    $slowtype "It's probably fine."
 		fi
+	    fi
 	    fi
 	    ;;
     esac
@@ -80,7 +83,7 @@ else if [ $LEVEL == 1 ]; then
 	$slowtype "But if you can send me the contents of the file..."
 	$slowtype "I think you should probably know how to do this from the information I taught you."
 	$slowtype "Oh, and one more thing:"
-	$slowtyype "You know that -i flag? You should use that flag when you are feeding me an input."
+	$slowtype "You know that -i flag? You should use that flag when you are feeding me an input."
     fi
     fi
     fi
