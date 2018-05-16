@@ -28,7 +28,9 @@ while getopts "i:" OPTION; do
         i)
 	    if [ "$LEVEL" == 0 ]; then
 		if [ "$OPTARG" == $PWD ]; then
-                    $slowtype "${PWD}? Oh, thanks. Wow, what a life saver. Good job."
+		    echo $PWD?
+		    sleep 2
+                    $slowtype "Oh, thanks. Wow, what a life saver. Good job."
                     nextLevel
                     exit
 		else
@@ -78,7 +80,7 @@ else if [ $LEVEL == 1 ]; then
 	$slowtype "But there's a solution for that."
 	$slowtype "For every folder, there is a hidden file that contains the file history of that folder."
         $slowtype "This is not accessible by normal means, but I have brought the file here for you, so you can see it."
-	cp ./.bin/ilius-file_history.hist ./ilius-file_history.hist 
+	cp ./.bin/ilius-file_history.hist ./C7A38FBF-file_history.hist 
 	$slowtype "Unfortunately, there are security measures in modern machines that disallow AI to access the contents of the file."
 	$slowtype "But if you can send me the contents of the file..."
 	$slowtype "I think you should probably know how to do this from the information I taught you."
