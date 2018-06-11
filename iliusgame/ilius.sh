@@ -40,11 +40,21 @@ while getopts "i:" OPTION; do
 	    else if [ "$LEVEL" == 1 ]; then
 		if [ "$OPTARG" == "./ilius-file_history.hist" ]; then
 		    $slowtype "Yes! Fantastic j"
+		    sleep 1
 		    $slowtype "Oh, no..."
 		    $slowtype "The file is total junk data. Ugh... "
 		    $slowtype "Well, that's normal behavior..."
 		    sleep 1
 		    $slowtype "It's probably fine."
+		    $slowtype "There are backups. I'll find one for you right now..."
+		    $slowtype "Huh? Everything is a maze! Folders within folders within folders!"
+		    $slowtype "Something MUST have been tampered with..."
+		    $slowtype "Anyway, I think I know how you can find the backup file."
+		    $slowtype "In BASH, there is a function called \"Piping\". Basically, it allows one command to take input from another."
+		    $slowtype "For example,"
+		    $slowtype "ls | head -3"
+		    $slowtype "will output the first 3 lines of ls. See how that could be useful for our current task?"
+		    $slowtype "Off you go! FIND THAT FILE!"
 		fi
 	    fi
 	    fi
@@ -79,8 +89,8 @@ else if [ $LEVEL == 1 ]; then
 	$slowtype "Alright, I have another task for you. I have no idea how I got here, or where I came from."
 	$slowtype "But there's a solution for that."
 	$slowtype "For every folder, there is a hidden file that contains the file history of that folder."
-        $slowtype "This is not accessible by normal means, but I have brought the file here for you, so you can see it."
-	cp ./.bin/ilius-file_history.hist ./C7A38FBF-file_history.hist 
+        $slowtype "This is not accessible by normal means, but I have copied the file here for you, so you can see it."
+	cp ./.bin/ilius-file_history.hist ./C7A38FBF.hist 
 	$slowtype "Unfortunately, there are security measures in modern machines that disallow AI to access the contents of the file."
 	$slowtype "But if you can send me the contents of the file..."
 	$slowtype "I think you should probably know how to do this from the information I taught you."
